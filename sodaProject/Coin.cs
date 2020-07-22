@@ -18,21 +18,8 @@ namespace sodaProject
             }
           
         }
-        //private double penny;
-        //private double nickle;
-        //private double dime;
-        //private double quarter;
-
-        //public double Penny
-        //{
-        //    get { return penny; }
-        //    set { Penny = value; }
-        //}
-        //public double Nickle
-        //{
-        //    get { return nickle; }
-        //    set { Nickle = value; }
-        //}
+       
+        
     }
 
 

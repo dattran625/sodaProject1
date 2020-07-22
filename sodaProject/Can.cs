@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace sodaProject
 {
-    class Can
+    abstract class Can
     {
-        private string OrangeSoda;
-        private string RootBeer;
-        private string Cola;
+        public string Name;
+        protected double price;
 
+        public double Price
+        {
+            get
+            {
+                return price;
+            }
+        }
     }
 }

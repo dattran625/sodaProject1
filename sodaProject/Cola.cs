@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace sodaProject
 {
-    class Cola
+    class Cola : Can
     {
+        public Cola()
+        {
+            Name = "cola";
+            price = .50;
+
+
+        }
     }
 }

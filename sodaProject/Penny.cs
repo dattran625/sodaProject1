@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace sodaProject
 {
-    class Penny
+    class Penny : Coin
     {
+        
+        
+            public Penny()
+            {
+                Name = "penny";
+                value = .01;
+            }
+        
     }
 }
