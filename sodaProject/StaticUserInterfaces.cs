@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace sodaProject
 {
-    class Quarter :Coin
+    class StaticUserInterfaces
     {
     }
 }

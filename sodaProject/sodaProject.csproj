@@ -58,6 +58,7 @@
     <Compile Include="Quarter.cs" />
     <Compile Include="RootBeer.cs" />
     <Compile Include="SodaMachine.cs" />
+    <Compile Include="StaticUserInterfaces.cs" />
     <Compile Include="Stimulation.cs" />
     <Compile Include="Wallet.cs" />
   </ItemGroup>

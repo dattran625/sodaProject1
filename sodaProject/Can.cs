@@ -8,5 +8,9 @@ namespace sodaProject
 {
     class Can
     {
+        private string OrangeSoda;
+        private string RootBeer;
+        private string Cola;
+
     }
 }

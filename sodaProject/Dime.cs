@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace sodaProject
 {
-    class Dime
+    class Dime : Coin
     {
+        public Dime()
+        {
+            Name = "Dime";
+            value = 0.10;
+        }
     }
 }
