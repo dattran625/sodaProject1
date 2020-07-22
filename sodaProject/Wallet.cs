@@ -18,11 +18,19 @@ namespace sodaProject
             {
                 Money.Add(new Dime());
             }
-           
-          
-            Money.Add(new Quarter());
-            Money.Add(new Nickle());
-            Money.Add(new Penny());
+            for (int i = 0; i < 8; i++)
+
+            {
+                Money.Add(new Quarter());
+            }
+            for (int i = 0; i < 15; i++)
+            {
+                Money.Add(new Nickle());
+            }
+            for (int i = 0; i < 50; i++)
+            {
+                Money.Add(new Penny());
+            }
         }
     }
 }
