@@ -11,7 +11,8 @@ namespace sodaProject
         public Cola()
         {
             Name = "cola";
-            price = .50;
+            price = .35;
+            
 
 
         }

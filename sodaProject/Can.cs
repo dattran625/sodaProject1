@@ -10,6 +10,7 @@ namespace sodaProject
     {
         public string Name;
         protected double price;
+        
 
         public double Price
         {
@@ -17,6 +18,18 @@ namespace sodaProject
             {
                 return price;
             }
+
         }
+        
+
+
+
+        
+          
+
+        
+
     }
+
 }
+

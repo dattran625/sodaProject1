@@ -11,7 +11,8 @@ namespace sodaProject
         public RootBeer()
         {
             Name = "rootBeer";
-            price = .50;
+            price = .60;
+            
         }
     }
 }

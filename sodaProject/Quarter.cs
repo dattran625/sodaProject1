@@ -12,7 +12,7 @@ namespace sodaProject
         {
         Name ="Quarter";
             value = .25;
-
+         
         }
     }
 }

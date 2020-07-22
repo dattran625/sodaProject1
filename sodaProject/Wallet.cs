@@ -14,8 +14,15 @@ namespace sodaProject
         {
             Money = new List<Coin>();
 
-            Money.Add(new Dime());
+            for (int i = 0; i < 10; i++)
+            {
+                Money.Add(new Dime());
+            }
+           
+          
             Money.Add(new Quarter());
+            Money.Add(new Nickle());
+            Money.Add(new Penny());
         }
     }
 }

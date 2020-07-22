@@ -10,6 +10,7 @@ namespace sodaProject
     {
         public string Name;
         protected double value;
+        protected double coinInventory;
         public double Value 
         {
             get
@@ -18,6 +19,7 @@ namespace sodaProject
             }
           
         }
+        
        
         
     }

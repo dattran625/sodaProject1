@@ -12,6 +12,12 @@ namespace sodaProject
         {
             Name = "Dime";
             value = 0.10;
+            
+       
+        
         }
+       
     }
 }
+
+

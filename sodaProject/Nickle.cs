@@ -12,6 +12,7 @@ namespace sodaProject
         {
             Name = "Nickle";
             value = .05;
+           
         }
     }
 }
