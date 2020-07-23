@@ -20,11 +20,16 @@ namespace sodaProject
             can = new List<Can>();
 
         }
-
-        public void BackPackContain()
+        public void SodaCanToBackpack()
         {
-            if (sodaMachine.Soda.Count -- == backpack.backpack.can.Count++)
-
+            for (int i = 0; i <sodaMachine.Soda.Count; i++)
+                if (sodaMachine.Soda[i].Name == "Cola")
+                {
+                    Can canToRemove = sodaMachine.Soda[i];
+                    sodaMachine.Soda.RemoveAt(i);
+                    backpack.can.Add(canToRemove);
+                    break;
+                }
         }
     }
 }

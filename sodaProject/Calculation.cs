@@ -18,7 +18,7 @@ namespace sodaProject
             switch(money)
             {
 
-                case 1:
+                case (1):
                     for (int i = 0; i < wallet.Money.Count; i++)
                     {
                         if(wallet.Money[i].Name == "Penny")
@@ -30,7 +30,7 @@ namespace sodaProject
                         }
                     }
                     break;
-                case 2:
+                case (5):
                     for (int i = 0; i < wallet.Money.Count; i++)
                     {
                         if (wallet.Money[i].Name == "Nickel")
@@ -43,7 +43,7 @@ namespace sodaProject
                     }
                     break;
                     
-                   case 3:
+                   case (10):
                     for (int i = 0; i < wallet.Money.Count; i++)
                     {
                         if (wallet.Money[i].Name == "Dime")
@@ -55,7 +55,7 @@ namespace sodaProject
                         }
                     }
                     break;
-                case 4:
+                case (25):
                     for (int i = 0; i < wallet.Money.Count; i++)
                     {
                         if (wallet.Money[i].Name == "Quarter")
@@ -67,6 +67,10 @@ namespace sodaProject
                         }
                     }
                     break;
+                default:
+                    Console.WriteLine("Invalid Entry");
+                    break;
+
                     
             }
         }
