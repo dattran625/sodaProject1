@@ -10,6 +10,12 @@ namespace sodaProject
     {
         static void Main(string[] args)
         {
+
+            Stimulation stimulation = new Stimulation();
+            stimulation.Run();
+
         }
+
+        
     }
 }

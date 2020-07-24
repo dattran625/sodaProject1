@@ -6,73 +6,79 @@ using System.Threading.Tasks;
 
 namespace sodaProject
 {
-    class Calculation
+    public static class Calculation
     {
-        static public Wallet wallet;
-        static public SodaMachine sodaMachine;
-        static public Can can;
+       
 
 
-        static void DepositCoin(double money)
+        public static double DepositCoin(double payment, Customer customer, SodaMachine sodaMachine)
         {
-            switch(money)
+            switch(payment)
             {
 
-                case (1):
-                    for (int i = 0; i < wallet.Money.Count; i++)
+                case .01:
+                    for (int i = 0; i < customer.payment.Count; i++)
                     {
-                        if(wallet.Money[i].Name == "Penny")
+                        if(customer.payment[i].Name == "Penny")
                         {
-                            Coin coinToPay = wallet.Money[i];
-                            wallet.Money.RemoveAt(i);
+                            Coin coinToPay = customer.payment[i];
+                            customer.payment.RemoveAt(i);
                             sodaMachine.Register.Add(coinToPay);
-                            break;
+                            return coinToPay.Value;
                         }
+                                     
+                       
                     }
-                    break;
-                case (5):
-                    for (int i = 0; i < wallet.Money.Count; i++)
+                        break;
+                case .05:
+                    for (int i = 0; i < customer.payment.Count; i++)
                     {
-                        if (wallet.Money[i].Name == "Nickel")
+                        if (customer.payment[i].Name == "Nickel")
                         {
-                            Coin coinToPay = wallet.Money[i];
-                            wallet.Money.RemoveAt(i);
+                            Coin coinToPay = customer.payment[i];
+                            customer.payment.RemoveAt(i);
                             sodaMachine.Register.Add(coinToPay);
-                            break;
+                            return coinToPay.Value;
+                            
                         }
                     }
                     break;
                     
-                   case (10):
-                    for (int i = 0; i < wallet.Money.Count; i++)
+                   case .10:
+                    for (int i = 0; i < customer.payment.Count; i++)
                     {
-                        if (wallet.Money[i].Name == "Dime")
+                        if (customer.payment[i].Name == "Dime")
                         {
-                            Coin coinToPay = wallet.Money[i];
-                            wallet.Money.RemoveAt(i);
+                            Coin coinToPay = customer.payment[i];
+                            customer.payment.RemoveAt(i);
                             sodaMachine.Register.Add(coinToPay);
-                            break;
+                             return coinToPay.Value;
                         }
                     }
                     break;
-                case (25):
-                    for (int i = 0; i < wallet.Money.Count; i++)
+                case .25:
+                    for (int i = 0; i < customer.payment.Count; i++)
                     {
-                        if (wallet.Money[i].Name == "Quarter")
+                        if (customer.payment[i].Name == "Quarter")
                         {
-                            Coin coinToPay = wallet.Money[i];
-                            wallet.Money.RemoveAt(i);
+                            Coin coinToPay = customer.payment[i];
+                            customer.payment.RemoveAt(i);
                             sodaMachine.Register.Add(coinToPay);
-                            break;
+                            return coinToPay.Value;
                         }
                     }
                     break;
-                default:
-                    Console.WriteLine("Invalid Entry");
-                    break;
+                    default:
+                    {
+                        Console.WriteLine("Invalid Entry");
+                       
+                        return DepositCoin(payment, customer, sodaMachine);
+                    }
 
                     
             }
+                    return DepositCoin(payment, customer, sodaMachine);
         }
+       
     }
 }

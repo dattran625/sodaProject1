@@ -7,18 +7,20 @@ using System.Threading.Tasks;
 
 namespace sodaProject
 {
-    class SodaMachine
+    public class SodaMachine
     {
         public List<Can> Soda;
         public List<Coin> Register;
+        public char Drinkselection;
+        public Customer customer;
 
-        
+
 
 
 
         public SodaMachine()
         {
-            
+
             Soda = new List<Can>();
             for (int i = 0; i < 10; i++)
             {
@@ -52,10 +54,17 @@ namespace sodaProject
             }
 
 
+
         }
-        
+    }
+}
+
+
+
+
+
         
             
         
-    }  
-}
+      
+

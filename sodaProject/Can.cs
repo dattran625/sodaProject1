@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace sodaProject
 {
-    abstract class Can
+    public abstract class Can
     {
         public string Name;
         protected double price;

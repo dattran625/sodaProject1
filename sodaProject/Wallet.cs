@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace sodaProject
 {
-    class Wallet
+    public class Wallet
     {
         public List<Coin> Money;
 

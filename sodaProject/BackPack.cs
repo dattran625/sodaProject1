@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace sodaProject
 {
-    class BackPack
+    public class BackPack
     {
         public SodaMachine sodaMachine;
         public BackPack backpack;

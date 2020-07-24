@@ -8,52 +8,87 @@ namespace sodaProject
 {
      class StaticUserInterfaces
     {
+        
+
+
+
 
 
         static public void DisplaySelection()
         {
             
-            Console.WriteLine(" C - Cola     ");
-            Console.WriteLine("R - RootBeer  ");
-            Console.WriteLine("O - OrangeSoda");
+            Console.WriteLine(" Cola  ");
+            Console.WriteLine( "RootBeer ");
+            Console.WriteLine( "OrangeSoda ");
             Console.WriteLine();
             Console.WriteLine(" Please select your drink");
-            MakeDrinkSelection(Convert.ToChar(Console.ReadLine().ToUpper()));
+            Console.ReadLine();
         }
-        static public void MakeDrinkSelection(char selection)
+        static public string ValidateDrinkSelection(string selection)
         {
             bool selectionValid = false;
             while(!selectionValid)
             {
                 switch(selection)
                 {
-                    case 'C':
-                        Console.WriteLine("Thank you, Here is your Cola");
+                    case "Cola":
+                        Console.WriteLine("Thank you for choosing Cola");
+                        
+                        
+                        selectionValid = true;
+                        break;
+                        
+
+                    case "RootBeer":
+                        Console.WriteLine("Thank you for choosing RootBeer");
+                       
                         selectionValid = true;
                         break;
 
-                    case 'R':
-                        Console.WriteLine("Thank you, Here is your RootBeer");
-                        selectionValid = true;
-                        break;
 
-
-                    case 'O':
-                        Console.WriteLine("Thank you, Here is your OrangeSoda");
+                    case "OrangSoda":
+                        Console.WriteLine("Thank you for choosing OrangeSoda");
+                        
                         selectionValid = true;
                         break;
 
                     default:
                         Console.WriteLine("Invalid selection. Please re-enter your selection");
-                        selection = Convert.ToChar(Console.ReadLine().ToUpper());
+                        selection = Console.ReadLine();
                         selectionValid = false;
                         break;
 
 
                 }
 
+                
             }
+            return selection;
 
         }
+       
+        static public void CoinSelectionDisplay()
+        { 
+            Console.WriteLine(" 1 - Penny     ");
+            Console.WriteLine(" 5 - Nickle    ");
+            Console.WriteLine(" 10 - Dime     ");
+            Console.WriteLine(" 25 - Quarter  ");
+            Console.WriteLine();
+            Console.WriteLine(" Please insert your coin");
+            Convert.ToDouble(Console.ReadLine().ToUpper());
+        }
+        
+
+
     }
+
+
+
+
+    
+
+    
+        
+            
+    
 }

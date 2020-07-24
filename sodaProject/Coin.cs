@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace sodaProject
 {
-    abstract class Coin
+    public abstract class Coin
     {
         public string Name;
         protected double value;
